@@ -1,5 +1,5 @@
 // src/components/App/index.js
-import React, { Component, Link } from 'react';
+import React, { Component } from 'react';
 import './style.css';
 import {
     // Button,
