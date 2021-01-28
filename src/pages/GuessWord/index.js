@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 // import queryString from 'query-string'
 // import { useLocation } from 'react-router-dom'
 
-
 import './style.css';
 import {
     // Button,
@@ -45,12 +44,12 @@ class GuessWord extends Component {
             <Grid container columns={2} relaxed stackable>
             <Grid.Row columns={2}>
                 <Grid.Column>
-                    <Link to="/guessword/admin">
+                    <a href="/guessword/admin">
                     <Segment>
                         <FontAwesomeIcon icon={faPlus} />&nbsp;
                         สร้างห้อง
                     </Segment>
-                    </Link>
+                    </a>
                 </Grid.Column>
                 <Grid.Column>
                     <Segment>
@@ -65,18 +64,15 @@ class GuessWord extends Component {
     )
   }
 }
-const GuessWordAdmin = () => {
-    // const { search } = useLocation()
-    // const values = queryString.parse(search)
-    // console.log(values.filter) // "top"
-    return (
-        <div>
-            <h2>Welcome to Admin Mode</h2>
-            <p>
-                ROOM: 
-            </p>
-        </div>
-    )
+class GuessWordAdmin extends Component {
+    render() {
+       return (
+          <div>
+             <h2>Welcome to Admin Mode</h2>
+             <p>Room !!!</p>
+          </div>
+       );
+    }
 }
 class GuessWordPresent extends Component {
     render() {

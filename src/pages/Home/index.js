@@ -29,6 +29,7 @@ class About extends Component {
       <div>
         <h1>Home Page</h1>
         <CardExampleCard />
+        version 0.0.1
       </div>
     )
   }
