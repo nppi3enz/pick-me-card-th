@@ -1,7 +1,7 @@
 // src/components/App/index.js
 import React, { Component } from 'react';
-import queryString from 'query-string'
-import { useLocation } from 'react-router-dom'
+// import queryString from 'query-string'
+// import { useLocation } from 'react-router-dom'
 
 
 import './style.css';
@@ -66,15 +66,14 @@ class GuessWord extends Component {
   }
 }
 const GuessWordAdmin = () => {
-    const { search } = useLocation()
-    const values = queryString.parse(search)
-    console.log(values.filter) // "top"
+    // const { search } = useLocation()
+    // const values = queryString.parse(search)
+    // console.log(values.filter) // "top"
     return (
         <div>
             <h2>Welcome to Admin Mode</h2>
             <p>
                 ROOM: 
-                {values.room}
             </p>
         </div>
     )
