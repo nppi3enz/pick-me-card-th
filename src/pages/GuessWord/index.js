@@ -44,18 +44,18 @@ class GuessWord extends Component {
             <Grid container columns={2} relaxed stackable>
             <Grid.Row columns={2}>
                 <Grid.Column>
-                    <a href="/guessword/admin">
                     <Segment>
                         <FontAwesomeIcon icon={faPlus} />&nbsp;
                         สร้างห้อง
                     </Segment>
-                    </a>
                 </Grid.Column>
                 <Grid.Column>
+                    <a href="/guessword/present">
                     <Segment>
                         <FontAwesomeIcon icon={faSignInAlt} />&nbsp;
                         เข้าร่วมเกม
                     </Segment>
+                    </a>
                 </Grid.Column>
             </Grid.Row>
             </Grid>
