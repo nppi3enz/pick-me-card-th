@@ -11,8 +11,8 @@ const Routes = (props) => (
     <Route exact path="/" component={Home} />
     <Route exact path="/about" component={About} />
     <Route exact path="/guessword" component={GuessWord} />
-    <Route path="/guessword/:roomId/present" component={GuessWordPresent} />
-    <Route path="/guessword/:roomId/admin" component={GuessWordAdmin} />
+    <Route path="/guessword/present" component={GuessWordPresent} />
+    <Route path="/guessword/admin" component={GuessWordAdmin} />
     <Route path="*" component={NotFound} />
   </Switch>
 );
